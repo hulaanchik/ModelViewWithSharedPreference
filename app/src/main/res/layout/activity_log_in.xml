@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_backg"
+    tools:context="com.example.modelview.user.LogIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="User Login"
+            android:textSize="@dimen/margin_30"/>
+
+        <com.example.modelview.component.CustomEditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:user="true"
+            app:icon="@drawable/login"
+            app:title="asda">
+        </com.example.modelview.component.CustomEditText>
+
+        <com.example.modelview.component.CustomEditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/pass"
+            app:user="false"
+            app:title="asda">
+        </com.example.modelview.component.CustomEditText>
+
+<!--        <com.example.modelview.component.CustomEditText-->
+<!--            android:id="@+id/etPass"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:com.example.modelview.user="false"-->
+<!--            android:background="@drawable/login_edit_backg"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"></com.example.modelview.component.CustomEditText>-->
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_backg"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:text="Remember Username" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
